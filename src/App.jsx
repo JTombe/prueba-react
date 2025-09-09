@@ -1,6 +1,6 @@
 import { cardEmployee } from "./cardEmpleyee"
 
-export function App() {
+function App() {
   const employee = {
     employeeId : "EMP001",
     firstName : "Alice",
@@ -18,3 +18,5 @@ export function App() {
   }
   return cardEmployee(employee)
 }
+
+export default App;
