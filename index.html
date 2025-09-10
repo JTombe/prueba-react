@@ -3,13 +3,58 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="./src/assets/gatonegro.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Prueba</title>
 </head>
 
 <body>
-    <div id="root"></div>
+    <header>
+        <span class="contador">
+            empleados activos: <div class="contador"></div>
+        </span>
+        <span class="barra-de-busqueda">
+            <form action="/buscar" method="get">
+                <input type="search" name="q" placeholder="Introduce tu búsqueda...">
+                <button type="submit">Buscar</button>
+            </form>
+        </span>
+
+    </header>
+
+    <aside class="filtros">
+        <span>filtros</span>
+        <ul>
+            <li>
+                <input type="checkbox" id="tarea1" name="filtro1">
+                <label for="tarea1">empleados activos</label>
+            </li>
+            <li>
+                <ul id="filtro2">Departamento
+                    <li>
+                        <input type="checkbox" id="filtro2-1" name="filtro2-1">
+                        <label for="tarea3">Engineering</label>
+                    </li>
+                    <li><input type="checkbox" id="filtro2-2" name="filtro2-2">
+                        <label for="tarea3">Product</label>
+                    </li>
+                    <li><input type="checkbox" id="filtro2-3" name="filtro2-3">
+                        <label for="tarea3">Design</label>
+                    </li>
+                </ul>
+            </li>
+            <li class="filtro-barra">
+                <span>1 año o menos</span>
+                <span>3 años o mas</span>
+                <input type="range" min="1" max="3" value="0" id="filtro3" name="filtro3">
+                <label for="tarea2"></label>
+            </li>
+        </ul>
+    </aside>
+    <article id="root"></article>
+    <footer>
+        <span>prueba tecnica de react y next.js</span>
+    </footer>
     <script type="module" src="/src/index.jsx"></script>
 </body>
 

@@ -8,9 +8,9 @@ export function cardEmployee(employee) {
         <li>{employee.timeAtCompany}</li>
         <li>{employee.dateOfCreation}</li>
         <li>{employee.email}</li>
-        <li>{employee.localiton}</li>
+        <li>{employee.location}</li>
         <li>{employee.manager}</li>
-        <li>{employee.status}</li>
+        <li>{employee.statusEmployee}</li>
         <li>{employee.salaryBand}</li>
         <li>{employee.skills}</li>
       </ul>
